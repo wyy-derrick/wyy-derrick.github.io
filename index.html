@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- Title -->
+    <title>Yanyi Wang</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+      #intro-text p { font-family: 'Inter', sans-serif; font-size: 1.02em; line-height: 1.8em; }
+      .competition h3 { text-align: center; }
+      .competition .project-description p { text-align: center; font-family: 'Inter', sans-serif; font-weight: 600; color: #1e3a6b; }
+      .competition .project-description p i { text-align: left; display: block; font-weight: 400; font-family: 'Asap', sans-serif; color: #a0a8b0; }
+    </style>
+  </head>
+
+  <body id="body">
+
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <h1>Yanyi Wang</h1>
+          <p>
+            Hi, I am Yanyi Wang. I am currently a junior at Shenzhen Technology University, majoring in Electronic Science and Technology. Through years of competing in robotics challenges, I have cultivated deep expertise in real-world robots.
+            <br><br>
+            Currently, my research is focused on the fields of <b style="color: #1e3a6b;">dexterous hands and robotic tactile sensing</b>.
+            <br><br>
+            <a href="mailto:wangyanyi2319@gmail.com">Email</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/wyy-derrick">Github</a>
+            <br><br>
+          </p>
+        </div>
+        <div id="intro-image">
+          <img src="images/profile.jpg">
+        </div>
+      </div>
+
+      <div id="filters" class="button-group">
+        <button class="button is-checked" data-filter=".publication">Research</button>
+        <button class="button" data-filter=".competition">Competitions</button>
+      </div>
+
+      <div class="grid">
+
+        <!-- Publications -->
+        <div class="list-item publication" data-category="publication">
+          <a href="#" class="thumbnail">
+            <img src="figs/pu_1.jpg" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="#">A Two-Stage Optimization Framework for Designing Direct-Drive Dexterous Robotic Hands</a></h3>
+            <p>
+              <b>Yanyi Wang</b>, Zhenyuan Zhang, Mingqi Chen, Junjie Long, Jingke Lyu, Zhanat Kappassov, Yinggang Li, and Qiang Li<sup>*</sup><br>
+                <i>20th IEEE International Conference on Control and Automation (ICCA)</i>, 2026<br>
+                <!-- <a href="#">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+                <!-- <a href="#">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+                <!-- <a href="#">Video</a> -->
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Competitions -->
+        <div class="list-item competition description" data-category="competition">
+          <p>
+            I joined the Autobots team in my freshman year, where I gained foundational expertise in navigation and control. After competing in various team events as a core member in the 2024 season, I stepped up as the <b>Team Captain</b> for the 2025 season.
+            <br><br>
+            During my tenure, our team proudly secured <b>6 national-level and 12 provincial-level awards</b>. I am deeply grateful for the hard work and dedication of all my teammates—none of this would have been possible without them.
+          </p>
+        </div>
+
+        <div class="list-item competition" data-category="competition">
+          <a href="figs/c1_h264.mp4" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="figs/c1_h264.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3>OnSite Autonomous Driving Algorithm Challenge</h3>
+            <p>
+              National 5th Place (Season 2 Playoffs) &nbsp;|&nbsp; Regional 6th Place (Season 3 Playoffs)<br>
+              <i>This challenge evaluates the adaptability and stability of autonomous driving planning and control algorithms, requiring smooth sim-to-real transfer and real-car tests involving dynamic obstacle avoidance and traffic rule compliance.</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item competition" data-category="competition">
+          <a href="figs/c4_h264.mp4" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="figs/c4_h264.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3>The 20th National College Student Intelligent Vehicle Competition - Smart Life Challenge</h3>
+            <p>
+              National First Prize (10th Overall in Finals)<br>
+              <i>Set in a "Smart Life" scenario, this event requires building a fully autonomous pipeline integrating ROS and Gazebo. Key tasks included intelligent voice interaction, computer vision-based recognition, cargo picking, and autonomous navigation with dynamic obstacle avoidance.</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item competition" data-category="competition">
+          <a href="figs/c2.mp4" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="figs/c2.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3>The 19th National College Student Intelligent Vehicle Competition (Outdoor ROS Unmanned Vehicle Race)</h3>
+            <p>
+              National Third Prize<br>
+              <i>This competition tasks autonomous vehicles with a two-lap outdoor course. We utilized SLAM and sensor fusion to map the environment and identify obstacles in the first lap, followed by map-based autonomous navigation, traffic light detection, and precise parking in the second lap.</i>
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div id="footer">
+        Website template adapted from <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng</a>. Thank you to the original author for the open-source template.
+        <br>
+        <span style="color: #a0a8b0;">Last updated: May 2026</span>
+      </div>
+
+    </div>
+
+    <script>
+
+      // Isotope grid.
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false,
+        getSortData: {
+          name: '.name',
+          symbol: '.symbol',
+          number: '.number parseInt',
+          category: '[data-category]',
+          weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+          }
+        }
+      });
+
+      // Bind filter button click.
+      $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        localStorage.setItem('filterValue', filterValue);
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // Change is-checked class on buttons.
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+
+      function update_isotope() {
+        // Retrieve cached button click.
+        var defaultFilterValue = localStorage.getItem('filterValue');
+        if (defaultFilterValue == null) {
+          defaultFilterValue = ".publication"
+        }
+        $grid.isotope({ filter: defaultFilterValue });
+        var buttons = document.getElementsByClassName("button");
+        for (var currButton of buttons) {
+          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+            currButton.classList.add('is-checked');
+          } else {
+            currButton.classList.remove('is-checked');
+          }
+        }
+      }
+
+      update_isotope();
+
+    </script>
+  </body>
+</html>
