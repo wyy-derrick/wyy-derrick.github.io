@@ -3,7 +3,7 @@
   <head>
     <title>Yanyi Wang</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1000">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Yanyi Wang - researcher in dexterous robotic hands, tactile sensing, and autonomous driving. Shenzhen Technology University.">
     <meta name="keywords" content="Yanyi Wang, dexterous hands, robotic tactile sensing, robotics, autonomous driving, Shenzhen Technology University">
     <meta name="author" content="Yanyi Wang">
@@ -13,216 +13,258 @@
     <meta property="og:description" content="Researcher in dexterous robotic hands and tactile sensing at Shenzhen Technology University.">
     <meta property="og:url" content="https://wyy-derrick.github.io">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://wyy-derrick.github.io/images/profile.jpg">
-
-    <!-- Isotope JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="https://wyy-derrick.github.io/images/me.jpg">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
-      #intro-text p { font-family: 'Inter', sans-serif; font-size: 1.02em; line-height: 1.8em; }
-      .competition h3 { text-align: center; }
-      .competition .project-description p { text-align: center; font-family: 'Inter', sans-serif; font-weight: 600; color: #1e3a6b; }
-      .competition .project-description p i { text-align: left; display: block; font-weight: 400; font-family: 'Asap', sans-serif; color: #a0a8b0; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body id="body">
 
-    <div id="main">
-      <div id="intro">
-        <div id="intro-text">
-          <h1>Yanyi Wang</h1>
-          <p>
-            Hi, I am Yanyi Wang. I am currently a junior at Shenzhen Technology University, majoring in Electronic Science and Technology. Through years of competing in robotics challenges, I have cultivated deep expertise in real-world robots.
-            <br><br>
-            Currently, my research is focused on the fields of <b style="color: #1e3a6b;">dexterous hands and robotic tactile sensing</b>.
-            <br><br>
-            <a href="mailto:wangyanyi2319@gmail.com">Email</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/wyy-derrick">Github</a>
-            <br><br>
-          </p>
-        </div>
-        <div id="intro-image">
-          <img src="images/profile.jpg">
+    <!-- ===================== Navbar ===================== -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a class="nav-brand" href="#about">Yanyi Wang</a>
+        <div class="nav-links">
+          <a href="#about" class="nav-link active">About</a>
+          <a href="#news" class="nav-link">News</a>
+          <a href="#research" class="nav-link">Research</a>
+          <a href="#competitions" class="nav-link">Competitions</a>
+          <a href="mailto:wangyanyi2319@gmail.com" class="nav-link">Contact</a>
         </div>
       </div>
+    </nav>
 
-      <div id="filters" class="button-group">
-        <button class="button is-checked" data-filter=".publication">Research</button>
-        <button class="button" data-filter=".competition">Competitions</button>
-      </div>
+    <main class="container">
 
-      <div class="grid">
+      <!-- ===================== About ===================== -->
+      <section id="about">
+        <div class="about-row">
+          <div class="about-text">
+            <h1>Yanyi Wang</h1>
+            <p>
+              Hi, I am Yanyi Wang, an undergraduate student in Electronic Science
+              and Technology at
+              <a href="https://www.sztu.edu.cn/">Shenzhen Technology University</a>,
+              expected to graduate in 2027.
+            </p>
+            <p>
+              My research focuses on
+              <strong class="hl">dexterous robotic manipulation</strong>, particularly
+              the co-design of robot morphology and control, tactile sensing, and
+              sim-to-real learning. I enjoy building complete robotic systems that
+              connect mechanical design, perception, and intelligent control.
+            </p>
+          </div>
+          <div class="about-photo">
+            <img src="images/me.jpg" alt="Portrait of Yanyi Wang" width="955" height="1366">
+            <p class="photo-caption">
+              Shenzhen, China<br>
+              <a href="mailto:wangyanyi2319@gmail.com">wangyanyi2319@gmail.com</a>
+            </p>
+            <div class="about-links">
+              <a href="mailto:wangyanyi2319@gmail.com">Email</a>
+              <a href="https://github.com/wyy-derrick">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Publications -->
-        <div class="list-item publication" data-category="publication">
-          <a href="#" class="thumbnail">
-            <img src="figs/final1.png" alt="" />
-          </a>
-          <div class="project-description">
+      <!-- ===================== News ===================== -->
+      <section id="news">
+        <h2>News</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-date">Sep. 2026</span>
+            <p>I achieved an overall band score of <strong>7.0</strong> on the IELTS examination.</p>
+          </div>
+          <div class="news-item">
+            <span class="news-date">Aug. 6, 2026</span>
+            <p>Our AI-powered makeup robotic arm won the <strong>Grand MVP Award</strong> at the Hong Kong Physical AI Hackathon and was featured by <a href="https://www.scmp.com/tech/tech-trends/article/3363197/coded-glamour-and-glory-ai-make-arm-steals-show-hong-kong-hackathon" target="_blank" rel="noopener noreferrer"><strong>South China Morning Post</strong></a>, <a href="https://www.chinadailyhk.com/hk/article/637715" target="_blank" rel="noopener noreferrer"><strong>China Daily</strong></a>, <a href="https://mp.weixin.qq.com/s/1z5Rmu66m2_PhwDqf69Y_g" target="_blank" rel="noopener noreferrer"><strong>SpacemiT</strong></a>, and <a href="https://mp.weixin.qq.com/s/W8Yn3zU6GArd_kPdnLJZuA" target="_blank" rel="noopener noreferrer"><strong>Brizan Ventures</strong></a>.</p>
+          </div>
+          <div class="news-item">
+            <span class="news-date">May 2026</span>
+            <p>Our poster <em>Preliminary Result on a Dexterous Hand with Full Hand Tactile Sensing and its Sim2Real Study</em> received the <strong>Young Forum Top 10 Poster Award</strong> at the 5th China Conference on Force Tactile Technology and Applications; I was the <strong>sole undergraduate</strong> among the award recipients.</p>
+          </div>
+          <div class="news-more" aria-label="Earlier news omitted">
+            <span aria-hidden="true">•••</span>
+            <span>Earlier news</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Research ===================== -->
+      <section id="research">
+        <h2>Research</h2>
+
+        <div class="pub">
+          <span class="venue-badge">Poster Award</span>
+          <div class="pub-body">
             <h3><a href="#">Preliminary Result on a Dexterous Hand with Full Hand Tactile Sensing and its Sim2Real Study</a></h3>
-            <p>
-              <b style="color: rgb(20, 110, 190);">Yanyi Wang</b>, Siling Qiu, Zhengyang Zhong, Enrui Zhang, Jingke Lyu, Zhenyuan Zhang, Han Xu, and Qiang Li<sup>*</sup><br>
-                <i>The 5th China Conference on Force Tactile Technology and Applications</i>, 2026<br>
-                <span style="color: #e74c3c; font-weight: 600;">Top 10 Poster Award</span><br>
-                <a href="docs/poster.pdf">PDF</a>
-            </p>
+            <p class="pub-authors"><strong>Yanyi Wang</strong>, Siling Qiu, Zhengyang Zhong, Enrui Zhang, Jingke Lyu, Zhenyuan Zhang, Han Xu, and Qiang Li<sup>*</sup></p>
+            <p class="pub-venue">The 5th China Conference on Force Tactile Technology and Applications, 2026</p>
+            <p class="pub-award"><span class="award-badge gold">Top 10 Poster Award</span></p>
+            <div class="pub-buttons">
+              <a class="btn" href="docs/poster.pdf">PDF</a>
+            </div>
           </div>
-        </div>
-
-        <div class="list-item publication" data-category="publication">
-          <a href="#" class="thumbnail">
-            <img src="figs/pu_1.jpg" alt="" />
+          <a href="docs/poster.pdf" class="pub-thumb">
+            <img src="figs/final1.png" alt="Dexterous hand with full hand tactile sensing" width="4190" height="2319">
           </a>
-          <div class="project-description">
-            <h3><a href="#">A Two-Stage Optimization Framework for Designing Direct-Drive Dexterous Robotic Hands</a></h3>
-            <p>
-              <b style="color: rgb(20, 110, 190);">Yanyi Wang</b>, Zhenyuan Zhang, Mingqi Chen, Junjie Long, Jingke Lyu, Zhanat Kappassov, Yinggang Li, and Qiang Li<sup>*</sup><br>
-                <i>20th IEEE International Conference on Control and Automation (ICCA)</i>, 2026<br>
-                <!-- <a href="#">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
-                <!-- <a href="#">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
-                <!-- <a href="#">Video</a> -->
-            </p>
-          </div>
         </div>
 
+        <div class="pub">
+          <span class="venue-badge">ICCA</span>
+          <div class="pub-body">
+            <h3><a href="https://ieeexplore.ieee.org/abstract/document/11618238">A Two-Stage Optimization Framework for Designing Direct-Drive Dexterous Robotic Hands</a></h3>
+            <p class="pub-authors"><strong>Yanyi Wang</strong>, Zhenyuan Zhang, Mingqi Chen, Junjie Long, Jingke Lyu, Zhanat Kappassov, Yinggang Li, and Qiang Li<sup>*</sup></p>
+            <p class="pub-venue">20th IEEE International Conference on Control and Automation (ICCA), 2026</p>
+            <div class="pub-buttons">
+              <!-- <a class="btn" href="#">PDF</a> -->
+            </div>
+          </div>
+          <a href="https://ieeexplore.ieee.org/abstract/document/11618238" class="pub-thumb">
+            <img src="figs/pu_1.jpg" alt="Direct-drive dexterous robotic hand" width="2500" height="822">
+          </a>
+        </div>
+      </section>
 
-        <!-- Competitions -->
-        <div class="list-item competition description" data-category="competition">
+      <!-- ===================== Competitions ===================== -->
+      <section id="competitions">
+        <h2>Competitions</h2>
+
+        <div class="section-intro">
           <p>
-            I joined the Autobots team in my freshman year, where I gained foundational expertise in navigation and control. After competing in various team events as a core member in the 2024 season, I stepped up as the <b>Team Captain</b> for the 2025 season.
-            <br><br>
-            I am deeply grateful for the hard work and dedication of all my teammates—none of this would have been possible without them.
+            I joined the Autobots team in my freshman year, where I gained
+            foundational expertise in navigation and control. After competing in
+            various team events as a core member in the 2024 season, I stepped up
+            as the <strong>Team Captain</strong> for the 2025 season.
+          </p>
+          <p>
+            I am deeply grateful for the hard work and dedication of all my
+            teammates&mdash;none of this would have been possible without them.
           </p>
         </div>
 
-        <div class="list-item competition" data-category="competition">
-          <a href="figs/c1_h264.mp4" class="thumbnail">
-            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+        <div class="comp">
+          <a href="figs/c1_h264.mp4" class="comp-thumb">
+            <video playsinline muted autoplay loop preload="metadata" width="1280" height="720">
               <source src="figs/c1_h264.mp4" type="video/mp4">
               <source src="figs/c1.webm" type="video/webm">
             </video>
           </a>
-          <div class="project-description">
+          <div class="comp-body">
             <h3>OnSite Autonomous Driving Algorithm Challenge</h3>
-            <p>
-              National 5th Place (Season 2 Playoffs) &nbsp;|&nbsp; Regional 6th Place (Season 3 Playoffs)<br>
-              <i>This challenge evaluates the adaptability and stability of autonomous driving planning and control algorithms, requiring smooth sim-to-real transfer and real-car tests involving dynamic obstacle avoidance and traffic rule compliance.</i>
+            <p class="comp-awards">
+              <span class="award-badge teal">Regional 6th Place</span>
+              <span class="award-badge teal">National 5th Place</span>
             </p>
+            <p class="comp-desc">
+              This challenge evaluates the adaptability and stability of
+              autonomous driving planning and control algorithms, requiring
+              smooth sim-to-real transfer and real-car tests involving dynamic
+              obstacle avoidance and traffic rule compliance.
+            </p>
+            <p class="comp-note">National 5th Place (Season 2 Playoffs) &middot; Regional 6th Place (Season 3 Playoffs)</p>
           </div>
         </div>
 
-        <div class="list-item competition" data-category="competition">
-          <a href="figs/c4_h264.mp4" class="thumbnail">
-            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+        <div class="comp">
+          <a href="figs/c4_h264.mp4" class="comp-thumb">
+            <video playsinline muted autoplay loop preload="metadata" width="1272" height="720">
               <source src="figs/c4_h264.mp4" type="video/mp4">
               <source src="figs/c4.webm" type="video/webm">
             </video>
           </a>
-          <div class="project-description">
-            <h3>The 20th National College Student Intelligent Vehicle Competition - Smart Life Challenge</h3>
-            <p>
-              National First Prize (10th Overall in Finals)<br>
-              <i>Set in a "Smart Life" scenario, this event requires building a fully autonomous pipeline integrating ROS and Gazebo. Key tasks included intelligent voice interaction, computer vision-based recognition, cargo picking, and autonomous navigation with dynamic obstacle avoidance.</i>
+          <div class="comp-body">
+            <h3>The 20th National College Student Intelligent Vehicle Competition &mdash; Smart Life Challenge</h3>
+            <p class="comp-awards">
+              <span class="award-badge lime">National First Prize</span>
             </p>
+            <p class="comp-desc">
+              Set in a &ldquo;Smart Life&rdquo; scenario, this event requires building a fully
+              autonomous pipeline integrating ROS and Gazebo. Key tasks included
+              intelligent voice interaction, computer vision-based recognition,
+              cargo picking, and autonomous navigation with dynamic obstacle
+              avoidance.
+            </p>
+            <p class="comp-note">National First Prize &middot; 10th Overall in Finals</p>
           </div>
         </div>
 
-        <div class="list-item competition" data-category="competition">
-          <a href="figs/c2.mp4" class="thumbnail">
-            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+        <div class="comp">
+          <a href="figs/c2_h264.mp4" class="comp-thumb">
+            <video playsinline muted autoplay loop preload="metadata" width="1280" height="720">
               <source src="figs/c2_h264.mp4" type="video/mp4">
               <source src="figs/c2.webm" type="video/webm">
             </video>
           </a>
-          <div class="project-description">
+          <div class="comp-body">
             <h3>The 19th National College Student Intelligent Vehicle Competition (Outdoor ROS Unmanned Vehicle Race)</h3>
-            <p>
-              National Third Prize<br>
-              <i>This competition tasks autonomous vehicles with a two-lap outdoor course. We utilized SLAM and sensor fusion to map the environment and identify obstacles in the first lap, followed by map-based autonomous navigation, traffic light detection, and precise parking in the second lap.</i>
+            <p class="comp-awards">
+              <span class="award-badge green">National Third Prize</span>
             </p>
+            <p class="comp-desc">
+              This competition tasks autonomous vehicles with a two-lap outdoor
+              course. We utilized SLAM and sensor fusion to map the environment
+              and identify obstacles in the first lap, followed by map-based
+              autonomous navigation, traffic light detection, and precise parking
+              in the second lap.
+            </p>
+            <p class="comp-note">National Third Prize</p>
           </div>
         </div>
+      </section>
 
+      <!-- ===================== Footer ===================== -->
+      <footer id="footer">
+        <p>
+          Website template adapted from
+          <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng</a>
+          with layout inspired by <a href="https://martinpeticco.com/">Martin Peticco</a>'s site.
+          Thank you to the original authors for the open-source templates.
+        </p>
+        <p class="footer-updated">Last updated: September 2026</p>
+      </footer>
 
-
-      </div>
-
-      <div id="footer">
-        Website template adapted from <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng</a>. Thank you to the original author for the open-source template.
-        <br>
-        <span style="color: #a0a8b0;">Last updated: May 2026</span>
-      </div>
-
-    </div>
+    </main>
 
     <script>
+      // Scroll-spy: highlight the nav link of the section in view.
+      (function () {
+        var links = Array.prototype.slice.call(document.querySelectorAll('.nav-link[href^="#"]'));
+        var sections = links
+          .map(function (link) { return document.querySelector(link.getAttribute('href')); })
+          .filter(Boolean);
 
-      // Isotope grid.
-      var $grid = $('.grid').isotope({
-        itemSelector: '.list-item',
-        layoutMode: 'fitRows',
-        transitionDuration: 0,
-        stagger: 10,
-        initLayout: false,
-        getSortData: {
-          name: '.name',
-          symbol: '.symbol',
-          number: '.number parseInt',
-          category: '[data-category]',
-          weight: function( itemElem ) {
-            var weight = $( itemElem ).find('.weight').text();
-            return parseFloat( weight.replace( /[\(\)]/g, '') );
+        function setActive(id) {
+          links.forEach(function (link) {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
+        }
+
+        function update() {
+          var probe = window.scrollY + 160;
+          var current = sections.length ? sections[0].id : '';
+          sections.forEach(function (section) {
+            if (section.offsetTop <= probe) current = section.id;
+          });
+          // At the bottom of the page, always show the last section.
+          if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+            current = sections[sections.length - 1].id;
           }
+          setActive(current);
         }
-      });
 
-      // Bind filter button click.
-      $('#filters').on( 'click', 'button', function() {
-        var filterValue = $( this ).attr('data-filter');
-        localStorage.setItem('filterValue', filterValue);
-        $grid.isotope({ filter: filterValue });
-      });
-
-      // Change is-checked class on buttons.
-      $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function() {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $( this ).addClass('is-checked');
-        });
-      });
-
-      function update_isotope() {
-        // Retrieve cached button click.
-        var defaultFilterValue = localStorage.getItem('filterValue');
-        if (defaultFilterValue == null) {
-          defaultFilterValue = ".publication"
-        }
-        $grid.isotope({ filter: defaultFilterValue });
-        var buttons = document.getElementsByClassName("button");
-        for (var currButton of buttons) {
-          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
-            currButton.classList.add('is-checked');
-          } else {
-            currButton.classList.remove('is-checked');
-          }
-        }
-      }
-
-      update_isotope();
-
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        window.addEventListener('load', update);
+        update();
+      })();
     </script>
   <script data-goatcounter="https://wyy-derrick.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
